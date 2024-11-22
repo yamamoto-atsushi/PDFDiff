@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プログラム仕様書</title>
+</head>
+<body>
+    <h1>プログラム仕様書</h1>
+    <h2>概要</h2>
+    <p>このプログラムは、2つのPDFファイルを比較し、改訂履歴を特定するツールです。GUIを使用してファイルを選択し、ボタン操作で簡単に比較結果を生成します。</p>
+
+    <h2>機能</h2>
+    <ul>
+        <li>PDFファイルの選択</li>
+        <li>改訂箇所の差分をHTML形式で表示</li>
+        <li>解説付きの変更履歴レポートを生成</li>
+    </ul>
+
+    <h2>使用ライブラリ</h2>
+    <ul>
+        <li>tkinter: GUI構築</li>
+        <li>pdfminer.six: PDFテキスト抽出</li>
+        <li>difflib: テキスト差分生成</li>
+        <li>bs4 (BeautifulSoup): HTMLの操作</li>
+    </ul>
+
+    <h2>プログラム構成</h2>
+    <p>メインスクリプトは以下の構成です：</p>
+    <ol>
+        <li>GUIの構築</li>
+        <li>PDFファイルの選択</li>
+        <li>比較処理の実行</li>
+        <li>結果のHTMLレポート生成</li>
+    </ol>
+
+    <h2>動作環境</h2>
+    <ul>
+        <li>Python 3.8以上</li>
+        <li>Windows, macOS, Linux</li>
+    </ul>
+
+    <h2>制限事項</h2>
+    <ul>
+        <li>PDFの内容が画像の場合、正確に抽出できない可能性があります。</li>
+        <li>特殊なフォントを使用しているPDFは、文字化けする場合があります。</li>
+    </ul>
+</body>
+</html>
